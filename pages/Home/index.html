@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../Assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <title>Cadastre-se já</title>
+  </head>
+  <body>
+    <!--
+    <select id="formType" onchange="toggleForm()">
+      <option value="cliente">Cadastro para Pessoa Física</option>
+      <option value="empresa">Cadastro para Empresas - PJ</option>
+    </select>
+    -->
+    <header>
+      <div class="header">
+        <a href="./index.html">
+          <img class="imgLogoHeader" src="../../Assets/logo.png" alt="Logo da grts com a letra g azul e as letras rts em branco" />
+        </a>
+        <div class="headerIcon">
+          <a href="./index.html">
+            <img class="headerIcon" src="../../Assets/menu-icon.svg" alt="Icone de menu" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="clienteForm" class="container">
+        <div class="formImage">
+          <a href="https://grtsdigital.com.br/" target="_blank" rel="noopener noreferrer">
+            <img src="../../Assets/uira-01.png" alt="" />
+          </a>
+        </div>
+        <div class="form">
+          <form action="#">
+            <div class="formHeader">
+              <div class="title">
+                <h1>Cadastre-se</h1>
+              </div>
+              <div class="loginButton">
+                <button><a href="#">Entrar</a></button>
+              </div>
+            </div>
+            <div class="clientInputs">
+              <div class="clientTitle">
+                <h6>Selecione uma das opções abaixo:</h6>
+              </div>
+              <div class="selectBox">
+                <select class="selectClient" id="tipoDoCliente" name="cliente" required>
+                  <option value="none">Selecione uma opção</option>
+                  <option value="pf">Pessoa Física</option>
+                  <option value="pj">Pessoa Jurídica</option>
+                </select>
+              </div>
+              <div class="inputGroup">
+                <div class="inputBox">
+                  <label for="firstname">Nome completo:</label>
+                  <input id="firstname" type="text" name="firstname" placeholder="Digite o nome completo" required />
+                </div>
+                <div class="inputBox">
+                  <label for="email">E-mail</label>
+                  <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required />
+                </div>
+                <div class="inputBox">
+                  <label for="number">Telefone para contato:</label>
+                  <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" maxlength="12" required />
+                </div>
+                <div class="inputBox">
+                  <label for="address">Endereço Principal:</label>
+                  <input id="address" type="address" name="address" placeholder="Rua, Travessa ou Avenida" required />
+                </div>
+                <div class="inputBox">
+                  <label for="CEP">CEP:</label>
+                  <input id="CEP" name="numero" type="number" maxlength="9" valuemax="9" placeholder="CEP" required />
+                </div>                  
+                <div class="inputBox">
+                  <label for="numero">Número:</label>
+                  <input id="numero" name="numero" type="number" maxlength="6" placeholder="N°" required />
+                </div>
+                <div class="inputBox">
+                  <label for="bairro">Bairro:</label>
+                  <input type="text" id="bairro" name="bairro" placeholder="Digite seu bairro" required />
+                </div>
+                <div class="inputBox">
+                  <label for="complemento">Complemento:</label>
+                  <input type="text" id="complemento" name="complemento" placeholder="Digite o complemento do endereço" />
+                </div>
+                <div class="inputBox">
+                  <label for="cidade">Cidade:</label>
+                  <input type="text" id="cidade" name="cidade" placeholder="Cidade" required />
+                </div>
+                <div class="inputBox">
+                  <label for="estado">Estado (UF):</label>
+                  <input id="estado" type="text" name="estado" placeholder="Estado (UF)" required />
+                </div>
+                <div class="inputBox" id="enderecos">
+                  <!-- Os campos de endereço adicionais serão criados dinamicamente aqui -->
+                  <button class="buttons"></button>
+                </div>
+                <div class="buttons">
+                  <button id="add-endereco" type="button" value="Cadastrar">Cadastrar endereço adicional</button>
+                </div>
+                <div class="buttons">
+                  <button value="Cadastrar">Cadastrar</button>
+                  <button type="reset" value="Limpar">Limpar Campos</button>
+                </div>
+              </form>
+              </div>
+              </div>
+              </main>
+            <footer>
+                <section class="footerGroup">
+                  <div class="socialMedia">
+                    <p class="footerText">Siga-nos nas redes sociais:</p>
+                    <div class="instagram">
+                      <a href="https://www.instagram.com/grtsdigital/" target="_blank">
+                        <img src="../../Assets/instagramLogo.svg" alt="Logomarca do Instagram">
+                      </a>
+                    </div>
+                    <div class="facebook">
+                      <a href="https://www.facebook.com/grtsdigital/" target="_blank">
+                        <img src="../../Assets/facebookLogo.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="linkedin">
+                      <a href="https://www.linkedin.com/company/grtsdigital/about/" target="_blank">
+                        <img src="../../Assets/linkedinLogo.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footerInfo">
+                    <div class="map">
+                      <img src="../../Assets/mapIcon.svg" alt="">
+                      <p>
+                        <span>São Paulo - SP</span>
+                        Rua Libero Badaró, 425, Conjunto 186, 18º Andar, Centro. CEP 01009-000.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+            </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
+        

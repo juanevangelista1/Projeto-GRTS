@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../Assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./style/styles.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <a href="./index.html">
+        <img class="imgLogoHeader" src="../../Assets/logo.png" alt="Logo da grts com a letra g azul e as letras rts em branco" />
+      </a>
+      <div class="headerInput">
+        <input type="text" id="search" name="search" placeholder="🔍Digite o que deseja buscar" />
+      </div>
+    </div>
+  </header>     
+  <div class="title">
+    <h1>Dashboard</h1>
+  </div>
+  <nav>
+    <main class="info">
+      <h2 class="infoTitle">
+        Aqui estão as informações da sua busca:
+      </h2>
+      <div id="clienteForm" class="container">
+        <div class="infoField">
+          <h3>Nome:</h3>
+          <span>Juan Evangelista Nascimento</span>
+          <h3>Informações adicionais:</h3>
+          <span>Telefone: (71) 99999-9999</span>
+        </div>
+        <div class="infoFieldButton">
+          <button type="button" value="Editar" id="openModal">Editar cadastro</button>
+          <button id="deleteButton" type="button" value="Delete">Deletar cadastro</button>
+        </div>
+      </div>
+      <div id="clienteForm" class="container">
+        <div class="infoField">
+          <h3>Nome:</h3>
+          <span>Yasmin Silva de Miranda</span>
+          <h3>Informações adicionais:</h3>
+          <span>Telefone: (71) 99999-9999</span>
+        </div>
+        <div class="infoFieldButton">
+          <button type="button" value="Editar" id="openModal">Editar cadastro</button>
+          <button id="deleteButton" type="button" value="Delete">Deletar cadastro</button>
+        </div>
+      </div>
+      <div id="fade" class="hide"></div>
+      <div id="modal" class="hide">
+        <div class="modalHeader">
+          <h2>Aqui estão as suas informações:</h2>
+          <div class="modalButtons">
+            <button class="closeButton" id="closeModal">Fechar</button>
+          </div>
+        </div>
+        <div class="modalBody">
+          <div id="clienteForm" class="modalContainer">
+            <div class="infoField">
+              <h3>Nome:</h3>
+              <span>Juan Evangelista Nascimento</span>
+              <img src="../../Assets/editIcon.svg" alt="">
+            </div>
+            <div class="infoField">
+              <h3>Telefone para contato:</h3>
+              <span>Telefone: (71) 99999-9999</span>
+              <img src="../../Assets/editIcon.svg" alt="">
+            </div>
+            <div class="infoField">
+              <h3>E-mail principal:</h3>
+              <span>juan@gmail.com</span>
+              <img src="../../Assets/editIcon.svg" alt="">
+            </div>
+            <div class="infoField">
+              <h3>Endereço principal:</h3>
+              <img src="../../Assets/editIcon.svg" alt="">
+              <p>Travessa principal, sn</p>
+              <p>CEP: 41000-000</p>
+              <p>Bairro: Stiep</p>
+              <p>Cidade: Salvador</p>
+              <p>Estado: Bahia (BA)</p>
+            </div>
+            <div class="modalButtons">
+              <button class="closeButton">Deletar campos</button>
+              <button class="addAddress">Cadastrar endereço adicional</button>
+          </div>
+          </div>
+          </div>
+          </main>
+          <div class="form">
+              <form action="#">
+                  <div class="navbarHeader">
+                      <div>
+                          <h2>Filtre a sua busca:</h2>
+                      </div>
+                      <div class="clearButton">
+                          <button>limpar campos</button>
+                      </div>
+                  </div>
+                  <div class="clientInputs">
+                      <div class="inputGroup">
+                          <div class="inputBox">
+                              <select class="selectClient" id="tipoDoCliente" name="cliente" required>
+                                  <option value="none">Selecione uma opção</option>
+                                  <option value="pf">Pessoa Física</option>
+                                  <option value="pj">Pessoa Jurídica</option>
+                              </select>
+                          </div>
+                          <div class="inputBox">
+                              <label for="firstname">Nome:</label>
+                              <input id="firstname" type="text" name="firstname" placeholder="Digite o nome completo" />
+                          </div>
+                          <div class="inputBox">
+                              <label for="email">E-mail:</label>
+                              <input id="email" type="email" name="email" placeholder="Digite seu e-mail" />
+                          </div>
+                          <div class="inputBox">
+                              <label for="number">Telefone:</label>
+                              <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" maxlength="12" />
+                          </div>
+                          <div class="inputBox">
+                              <label for="address">Endereço:</label>
+                              <input id="address" type="address" name="address" placeholder="Rua, Travessa ou Avenida" />
+                          </div>
+                          <!-- Adicionar o numero / bairro, complemento, cidade, Estado -->
+                          <div class="inputBox">
+                              <label for="CEP">CEP:</label>
+                              <input id="CEP" name="numero" type="number" maxlength="9" placeholder="CEP" />
+                          </div>
+                          <div class="inputBox">
+                              <label for="bairro">Bairro:</label>
+                              <input type="text" id="bairro" name="bairro" placeholder="Digite seu bairro" />
+                          </div>
+                          <div class="inputBox">
+                              <label for="cidade">Cidade:</label>
+                              <input type="text" id="cidade" name="cidade" placeholder="Cidade" />
+                          </div>
+                          <div class="inputBox">
+                              <label for="estado">Estado (UF):</label>
+                              <input id="estado" type="text" name="estado" placeholder="Estado (UF)" />
+                          </div>
+                      </div>
+                      <div class="buttons">
+                          <button type="submit" value="Limpar">Filtrar</button>
+                      </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+     <script src="js/script.js"></script>
+    </body>
+</html>
