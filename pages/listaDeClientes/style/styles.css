@@ -168,7 +168,25 @@ nav {
   color: var(--body-color);
 }
 
+#secondButton {
+  width: 100%;
+  min-width: 12rem;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: var(--base-background-color);
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--base-color);
+}
+
 .infoFieldButton button:hover {
+  background-color: var(--base-color);
+  color: var(--base-background-color);
+  transition: 0.5s;
+}
+
+#secondButton:hover {
   background-color: var(--base-color);
   color: var(--base-background-color);
   transition: 0.5s;
@@ -329,7 +347,6 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   
   #modal {
-  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -337,10 +354,10 @@ input[type="number"]::-webkit-inner-spin-button {
   max-width: 90%;
   background-color: var(--base-background-color);
   padding: 1.2rem;
-  border-radius: 0.5rem;
+  border-radius: 15px;
   z-index: 10;
   position: absolute;
-  margin-top: 5rem;
+  margin-top: 12rem;
   }
   
   #fade,
@@ -352,7 +369,7 @@ input[type="number"]::-webkit-inner-spin-button {
   
   .modalHeader {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;                     
   align-items: center;
   border-bottom: 1px solid #ccc;
   margin-bottom: 1rem;
@@ -361,9 +378,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   
   .modalButtons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.62rem;
+    margin-top: 0.62rem;
   }
   
   .modalButtons button {
