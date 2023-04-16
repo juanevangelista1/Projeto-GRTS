@@ -27,7 +27,7 @@
       <h2 class="infoTitle">
         Aqui estão as informações da sua busca:
       </h2>
-      <div id="clienteForm" class="container">
+      <div class="container">
         <div class="infoField">
           <h3>Nome:</h3>
           <span>Juan Evangelista Nascimento</span>
@@ -39,7 +39,7 @@
           <button id="deleteButton" type="button" value="Delete">Deletar cadastro</button>
         </div>
       </div>
-      <div id="clienteForm" class="container">
+      <div class="container">
         <div class="infoField">
           <h3>Nome:</h3>
           <span>Yasmin Silva de Miranda</span>
@@ -47,8 +47,8 @@
           <span>Telefone: (71) 99999-9999</span>
         </div>
         <div class="infoFieldButton">
-          <button type="button" value="Editar" id="openModal">Editar cadastro</button>
-          <button id="deleteButton" type="button" value="Delete">Deletar cadastro</button>
+          <button type="button" value="Editar">Editar cadastro</button>
+          <button type="button" value="Delete">Deletar cadastro</button>
         </div>
       </div>
       <div id="fade" class="hide"></div>
@@ -106,43 +106,43 @@
                       <div class="inputGroup">
                           <div class="inputBox">
                               <select class="selectClient" id="tipoDoCliente" name="cliente" required>
-                                  <option value="none">Selecione uma opção</option>
+                                  <option value="">Selecione uma opção</option>
                                   <option value="pf">Pessoa Física</option>
                                   <option value="pj">Pessoa Jurídica</option>
                               </select>
                           </div>
                           <div class="inputBox">
                               <label for="firstname">Nome:</label>
-                              <input id="firstname" type="text" name="firstname" placeholder="Digite o nome completo" />
+                              <input id="firstname" type="text" name="firstname" placeholder="Filtre a busca pelo nome" />
                           </div>
                           <div class="inputBox">
                               <label for="email">E-mail:</label>
-                              <input id="email" type="email" name="email" placeholder="Digite seu e-mail" />
+                              <input id="email" type="email" name="email" placeholder="Filtre a busca pelo e-mail" />
                           </div>
                           <div class="inputBox">
                               <label for="number">Telefone:</label>
-                              <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" maxlength="12" />
+                              <input id="number" type="tel" name="number" placeholder=" Filtre a busca pelo Telefone" maxlength="12" />
                           </div>
                           <div class="inputBox">
                               <label for="address">Endereço:</label>
-                              <input id="address" type="address" name="address" placeholder="Rua, Travessa ou Avenida" />
+                              <input id="address" type="text" name="address" placeholder="Filtre a busca pelo endereço" />
                           </div>
                           <!-- Adicionar o numero / bairro, complemento, cidade, Estado -->
                           <div class="inputBox">
                               <label for="CEP">CEP:</label>
-                              <input id="CEP" name="numero" type="number" maxlength="9" placeholder="CEP" />
+                              <input id="CEP" name="numero" type="number" max="9" placeholder=" Filtre a busca pelo CEP" />
                           </div>
                           <div class="inputBox">
                               <label for="bairro">Bairro:</label>
-                              <input type="text" id="bairro" name="bairro" placeholder="Digite seu bairro" />
+                              <input type="text" id="bairro" name="bairro" placeholder="Filtre a busca pelo bairro" />
                           </div>
                           <div class="inputBox">
                               <label for="cidade">Cidade:</label>
-                              <input type="text" id="cidade" name="cidade" placeholder="Cidade" />
+                              <input type="text" id="cidade" name="cidade" placeholder=" Filtre a busca pela cidade" />
                           </div>
                           <div class="inputBox">
                               <label for="estado">Estado (UF):</label>
-                              <input id="estado" type="text" name="estado" placeholder="Estado (UF)" />
+                              <input id="estado" type="text" name="estado" placeholder="Filtre a busca pelo Estado (UF)" />
                           </div>
                       </div>
                       <div class="buttons">
@@ -151,7 +151,6 @@
                   </div>
               </form>
             </div>
-          </div>
         </nav>
      <script src="js/script.js"></script>
     </body>

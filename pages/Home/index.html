@@ -35,7 +35,7 @@
           </a>
         </div>
         <div class="form">
-          <form action="#">
+          <form action="." method="get">
             <div class="formHeader">
               <div class="title">
                 <h1>Cadastre-se</h1>
@@ -50,7 +50,7 @@
               </div>
               <div class="selectBox">
                 <select class="selectClient" id="tipoDoCliente" name="cliente" required>
-                  <option value="none">Selecione uma opção</option>
+                  <option value="">Selecione uma opção</option>
                   <option value="pf">Pessoa Física</option>
                   <option value="pj">Pessoa Jurídica</option>
                 </select>
@@ -66,19 +66,19 @@
                 </div>
                 <div class="inputBox">
                   <label for="number">Telefone para contato:</label>
-                  <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" maxlength="12" required />
+                  <input id="number" type="number" name="number" placeholder="(xx) xxxx-xxxx" max="12" required />
                 </div>
                 <div class="inputBox">
                   <label for="address">Endereço Principal:</label>
-                  <input id="address" type="address" name="address" placeholder="Rua, Travessa ou Avenida" required />
+                  <input id="address" type="text" name="address" placeholder="Rua, Travessa ou Avenida" required />
                 </div>
                 <div class="inputBox">
                   <label for="CEP">CEP:</label>
-                  <input id="CEP" name="numero" type="number" maxlength="9" valuemax="9" placeholder="CEP" required />
+                  <input id="CEP" name="numero" type="number" max="9" placeholder="CEP" required />
                 </div>                  
                 <div class="inputBox">
                   <label for="numero">Número:</label>
-                  <input id="numero" name="numero" type="number" maxlength="6" placeholder="N°" required />
+                  <input id="numero" name="numero" type="number" max="6" placeholder="N°" required />
                 </div>
                 <div class="inputBox">
                   <label for="bairro">Bairro:</label>
@@ -107,6 +107,7 @@
                   <button value="Cadastrar">Cadastrar</button>
                   <button type="reset" value="Limpar">Limpar Campos</button>
                 </div>
+              </div>
               </form>
               </div>
               </div>
